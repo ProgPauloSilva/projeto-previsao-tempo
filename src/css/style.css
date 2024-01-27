@@ -1,0 +1,77 @@
+html{
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+body{
+    background-color: #eeeeee;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container .main-content{
+    max-width: 330px;
+    background: #1f2949 url(../imagens/background.png)center center no-repeat;
+    border-radius: 15px;
+}
+.container .main-content .search{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+.container .main-content .search input,
+.container .main-content .search .btn-search{
+    background-color: #1f2949;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.container .main-content .search input{
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;    
+}
+.container .main-content .search .btn-search{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.container .main-content .btn-search .lupa{
+    width: 20px;
+}
+.container .main-info{
+    text-align: center;
+    margin: 30px;
+}
+.container .main-info h1{
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+.container .main-info .temperature{
+    color: #ffffff;
+    font-size: 5.8rem;
+    margin: 10px 0;
+}
+.container .main-info .weather-condition{
+    color: #ffffff;
+}
+.container .secondary-info{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.container .secondary-info .humidity,
+.container .secondary-info .wind-speed{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}

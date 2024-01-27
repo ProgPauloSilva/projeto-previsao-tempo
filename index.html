@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="container">
+        <main class="main-content">
+
+            <section class="search">
+                <input type="text" id="input-search" placeholder="Digite uma cidade!">
+                <button class="btn-search">
+                    <img class="lupa" src="./src/imagens/lupa.png" alt="imagem da lupa de pesquisa">
+                </button>                
+            </section>
+
+            <section class="main-info">
+                <h1 id="city">
+                    Use a lupa acima para ver o clima em uma cidade!
+                </h1>
+
+                <p id="temperature" class="temperature">--</p>
+
+                <img id="weather-icon" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="icone da imagem do tempo">
+
+                <p id="weather-condition" class="weather-condition">--</p>
+            </section>
+
+            <section class="secondary-info">
+                <div class="humidity">
+                    <span>Humidade</span>
+                    <span id="humidity">--</span>
+                </div>
+
+                <div class="wind-speed">
+                    <span>Velocidade do vento</span>
+                    <span id="wind-speed">--</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
